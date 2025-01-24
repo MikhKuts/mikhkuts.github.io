@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+}
+.revalia-regular {
+    font-family: "Revalia", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: #EEEFF1;
+    padding-top: 30px;
+}
+.navbar > h1 {
+    font-size: 40px;
+    font-family: "Revalia", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.navbar > ul {
+    list-style-type: none;
+    margin-top: 10px;
+}
+.navbar > ul > li {
+    display: inline-block;
+}
+.navbar > ul > li > a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+    padding: 20px;
+}
+.navbar > ul > li > a:hover {
+    /*color: brown;*/
+    color: white;
+    background-color: #545453;
+}
+.navbar > img {
+    padding: 0 0 10px 0;
+    height: 60px;
+    width: 100px
+}
+
+.main_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background: #EEEFF1;
+}
+.main-text {
+    width: 500px;
+    margin: 0 60px;
+}
+.main-text > h1 {
+    font-size: 40px;
+}
+.main-text > p {
+    padding: 30px 5px;
+}
+.main-text > a {
+    display: block;
+    background-color:rgb(66, 66, 224);
+    text-align: center;
+    padding: 20px;
+    width: 150px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 25px;
+    transition: all ease 1s;
+    &:hover {
+    background-color: #1d335f;
+    }
+}
+
+#about_me{
+    text-align: center;
+    background-color: #fffff9;
+}
+#about_me > h1 {
+    padding: 50px 0 0 0;
+}
+#about_me > p{
+    padding: 30px 0 50px 0;
+}
+
+#project {
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #1d335f;
+    align-items: center;
+}
+#project > img {
+    padding: 0 20px;
+    width: 140px;
+    height: 50px;
+}
+
+#skills {
+    height: 600px;
+    margin: 100px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+#skills > img {
+    width: 555px;
+    height: 450px;
+    margin-left: 100px;
+}
+
+#main_skills {
+    width: 345px;
+    display: flex;
+    flex-direction: column;
+}
+#main_skills > h1 {
+    margin: 30px 0;
+}
+
+#bar {
+    border-bottom: 5px solid #c4c4c4;
+}
+#bar_one {
+    border-bottom: 5px solid #34547a;
+    width: 250px;
+    position: relative;
+    top: 5px;
+}
+#bar_one > p {
+    padding: 15px 0;
+}
+
+#how_i_work {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #EEEFF1;
+    text-align: center;
+}
+#how_i_work > h1 {
+    padding: 50px 0 0 0;
+}
+#how_i_work > p {
+    padding: 50px 0 30px 0;
+}
+#how_i_work > video {
+    padding: 0 0 50px;
+}
+
+#collage {
+    display: grid;
+    grid-template-columns: repeat(4, 400px);
+    grid-template-rows: repeat(2, 400px);
+    gap: 0;
+    /*grid-template-areas: 
+    "image1 image2 image1 image2"
+    "image2 image1 image2 image1";*/
+}
+#section_one > img {
+    /*grid-area: image1;*/
+    height: 400px;
+    width: 400px;
+}
+#section_two > img {
+   /* grid-area: image2;*/
+    height: 400px;
+    width: 400px;
+}
+
+#compane {
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #ffffff;
+    align-items: center;
+}
+#compane > img {
+    padding: 0 20px;
+    width: 240px;
+    height: 100px;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0 25px;
+}
+#form > h1 {
+    padding: 0 0 10px;
+}
+#form > p {
+    padding: 0 0 10px;
+}
+#form__input {
+    background: white;
+  color: rgb(7 2 18);
+  transition: all 200ms ease;
+  border-left: 0 solid transparent;
+  border: 0;
+  height: 25px;
+  margin: 0 0 15px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 2px rgb(0, 0, 0);
+}
+#button_send {
+    background: rgb(66, 66, 224);
+    border: none;
+    color: #fff;
+    padding: 4px 10px;
+}
+
+#end {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #34547a;
+    padding: 20px 0 10px 0;
+}
+#text {
+    padding: 50px;
+    color: #ffffff;
+}
+#links {
+    padding: 50px;
+}
+#links > a {
+    padding: 15px;
+}
