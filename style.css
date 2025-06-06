@@ -137,6 +137,10 @@ p, h1, a {
         padding: 10px;
         display: flex;
         flex-direction: column;
+
+    }
+    > img {
+        width: 25%;
     }
 }
 
@@ -153,7 +157,9 @@ p, h1, a {
     }
     @media screen and (orientation: landscape) {
         > img {
-        height: 30%;
+        height: 25%;
+        width: 25%;
+        margin: 5%;
         }
     }
 }
