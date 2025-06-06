@@ -10,8 +10,7 @@ p, h1, a {
     display: block;
     background-color:rgb(66, 66, 224);
     text-align: center;
-    padding: 20px;
-    width: 150px;
+    padding: 2%;
     font-size: 20px;
     text-decoration: none;
     color: white;
@@ -76,13 +75,23 @@ p, h1, a {
     align-items: center;
     height: 500px;
     background: #EEEFF1;
-    > img {
+    @media screen and (orientation: portrait) {
+        > img {
+        height: 0%;
+        }
+    }
+    @media screen and (orientation: landscape) {
+        > img {
         height: 40%;
+        }
     }
 }
 .main-text {
     width: 500px;
     margin: 0 60px;
+    > a {
+        width: 150px;
+    }
 }
 .main-text > h1 {
     font-size: 40px;
@@ -136,15 +145,22 @@ p, h1, a {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    @media screen and (orientation: portrait) {
+        > img {
+        height: 0%;
+        width: 0%   ;
+        }
+    }
+    @media screen and (orientation: landscape) {
+        > img {
+        height: 30%;
+        }
+    }
 }
 .wrapper{
     display: flex;
     flex-direction: column;
-}
-#skills > img {
-    height: 30%;
-    width: 30%;
-    margin-left: 2%;
+    
 }
 
 #main_skills {
@@ -228,17 +244,26 @@ p, h1, a {
     flex-direction: row;
     justify-content: space-between;
     background-color: #34547a;
-    padding: 20px 0 10px 0;
+    padding: 2% 0 1% 0;
 }
 #text {
-    padding: 50px;
+    padding: 5%;
     color: #ffffff;
 }
 #links {
-    padding: 50px;
-    display: flex;
-    flex-direction: row;
+    padding: 5%;
+    @media screen and (orientation: portrait) {
+        display: flex;
+        flex-direction: column;
+    }
+    @media screen and (orientation: landscape) {
+        display: flex;
+        flex-direction: row;
+    }
 }
 #links > a {
-    padding: 15px;
+    padding: 2%;
+    > img {
+        width: 75%;
+    }
 }
