@@ -130,7 +130,18 @@ p, h1, a {
     margin: 5px;
     padding: 5px;
     display: flex;
-    flex-direction: row;
+    @media screen and (orientation: portrait) {
+        flex-direction: column;
+        > img {
+            width: 100%;
+        }
+    }
+    @media screen and (orientation: landscape) {
+        flex-direction: row;
+        > img {
+        width: 25%;
+    }
+    }
     justify-content: space-between;
     background-color: #80b2e4d7;
     > div {
@@ -139,9 +150,7 @@ p, h1, a {
         flex-direction: column;
 
     }
-    > img {
-        width: 25%;
-    }
+    
 }
 
 #skills {
